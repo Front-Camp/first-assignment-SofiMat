@@ -8,7 +8,7 @@
  * turnMeBaby('Some text'); // 'txet emoS'
  */
 const turnMeBaby = str => {
-    if(str != ''){
+    if(str instanceof String){
         return str.split("").reverse().join("");
     }
   
