@@ -8,11 +8,13 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  if(data instanceof Object && data != []){
+    for(var key in data){
+  if(data instanceof Object && data.hasOwnProperty(key)){
       return true;
   }
     else{
         return false;
+    }
     }
 };
 
