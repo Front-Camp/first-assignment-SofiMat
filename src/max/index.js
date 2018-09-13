@@ -6,8 +6,18 @@
 * max([1, 2, 4]); // 4
 * max([-1, 0]);   // 0
 */
+
 const max = arr => {
-  /* your logic here...*/
+    for(var i=0; i<arr.length; i++)
+        {
+            if(!isNaN(arr[i])){
+                return Math.max(arr);
+            }
+            else{
+                return 1;
+            }
+        }
+    
 };
 
 export default max;
