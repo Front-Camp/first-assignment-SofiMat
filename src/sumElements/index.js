@@ -11,7 +11,18 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+  for(var i=0; i<arr.length){
+      if(!isNaN(arr[i]) && arr[i] !instanceof String && isFinite(arr[i])) {
+          var sum;
+          return sum += arr[i];
+      }
+      else{
+          var sum;
+          return sum+= (!isNaN(arr[i]));
+      }
+          
+      }
+  }
 };
 
 export default sumElements;
