@@ -10,7 +10,7 @@
 const max = arr => {
     for(var i=0; i<arr.length; i++)
         {
-            if(!isNaN(arr[i])){
+            if(!isNaN(arr[i]) && arr[i]!= Infinity && arr[i]!= -Infinity){
                 return Math.max(arr);
             }
             else{
