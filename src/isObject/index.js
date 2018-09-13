@@ -8,7 +8,7 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  if(data instanceof Object){
+  if(data instanceof Object && data != []){
       return true;
   }
     else{

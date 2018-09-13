@@ -8,8 +8,8 @@
  * @return {string} truncated string
  */
 const truncate = (str, length = 0, replacer = '...') => {
-  return (str.length > maxlength) ?
-    str.slice(0, maxlength - 3) + '...' : str;
+  return (str.length > length) ?
+    str.slice(0, length - 3) + '...' : str;
 };
 
 export default truncate;
