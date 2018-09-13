@@ -15,9 +15,10 @@ const twoSums = (arr, base) => {
           var arr2 = [];
           arr2.push(arr[i]);
 arr2.push(arr[i+1]);
-          return arr2;
+          
       }
   }
+    return arr2;
 };
 
 export default twoSums;
