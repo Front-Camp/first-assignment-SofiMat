@@ -9,7 +9,7 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   return (str.length > length) ?
-    str.slice(0, length - 3) + '...' : str;
+    str.slice(0, length - 3) + replacer : str;
 };
 
 export default truncate;
